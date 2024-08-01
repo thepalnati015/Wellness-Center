@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Wellness Center</h1>
+            <nav>
+                <button class="menu-toggle" aria-label="Open menu">
+                    <span class="menu-icon">&#9776;</span>
+                </button>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="map.html">Hospital Finder</a></li>
+                    <li><a href="#faqs">Frequently asked Questions</a></li>
+                    <li><a href="#emergency-contacts">Emergency Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Health Insight at Your Fingertips</h2>
+            <p>Instantly check symptoms, find hospitals, and access health information quickly and easily.</p>
+            <div class="cta-buttons">
+                <a href="#symptom-checker" class="cta-button">Symptom Checker</a>
+                <a href="#health-resources" class="cta-button">Health Resources Library</a>
+                <a href="#emergency-contacts" class="cta-button">Emergency Contacts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Symptom Checker Section -->
+    <section class="symptom-checker" id="symptom-checker">
+        <div class="container">
+            <h1 style="font-weight: 700;">SYMPTOM CHECKER</h1>
+            <div class="symptom-checker-inner">
+                <div class="form-column">
+                    <form id="symptomForm">
+                        <label for="symptoms">Enter symptoms (comma separated):</label>
+                        <input type="text" id="symptoms" name="symptoms" required>
+                        <br>
+                        <label for="sex">Sex:</label>
+                        <select id="sex" name="sex" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <br>
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="1" required>
+                        <br>
+                        <button type="submit">Submit</button>
+                    </form>
+                    
+                    <div id="result"></div>
+                </div>
+                <div class="icons-column">                
+                    <div class="icon stair-step"><i class="fa-solid fa-notes-medical fa-1.7x"></i></div>
+                    <div class="icon stair-step"><i class="fa-solid fa-hand-holding-medical fa-1.7x"></i></div>
+                    <div class="icon stair-step"><i class="fa-solid fa-viruses fa-1.7x"></i></div>
+                    <div class="icon stair-step"><i class="fa-solid fa-tablets fa-1.7x"></i></div>
+                    <div class="icon stair-step"><i class="fa-solid fa-capsules fa-1.7x"></i></div>
+                    <div class="icon stair-step"><i class="fa-solid fa-star-of-life fa-1.7x"></i></div>
+                    <div class="icon stair-step"><i class="fa-solid fa-heart fa-1.7x"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <!-- Map Preview Section -->
+    <section class="map-preview">
+    <h1 style="color: #004d40; font-weight: 700;">EXPLORE HOSPITALS IN TELANGANA</h1>
+    <small style="display: block; text-align: center; padding-bottom: 10px;">(Click the image to view the detailed map.)</small>
+    <a href="map.html">
+        <img src="map-screenshot.png" alt="Hospital Finder Map" class="map-image">
+    </a>
+</section>
+
+
+    <!-- Health Resources Section -->
+<section class="health-resources" id="health-resources">
+    <div class="container">
+        <h1 style="color: #004d40; font-weight: 700;">HEALTH RESOURCES LIBRARY</h1>
+        <br>
+        <div class="card-grid">
+            <div class="card">
+                <a href="https://medium.com/in-fitness-and-in-health/i-walked-20k-steps-per-day-for-6-months-heres-what-happened-9da7a92d2523">
+                    <img src="photo1.png" alt="Article 1" width="150px" height="150px">
+                    <div class="card-content">
+                        <h2>I Walked 20k Steps per Day for 6 Months — Here’s What Happened</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://medium.com/chronically-ridiculous/what-does-pain-look-like-98de1f2bc637">
+                    <img src="photo2.png" alt="Article 2" width="150px" height="'150px">
+                    <div class="card-content">
+                        <h2>What Does Pain Look Like?</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://medium.com/in-fitness-and-in-health/you-destroy-your-brain-health-rapidly-with-these-4-stupid-daily-habits-bf11fe7ff00f">
+                    <img src="photo3.png" alt="Article 3"width="150px" height="150px">
+                    <div class="card-content">
+                        <h2>You Destroy Your Brain Health Rapidly With These 4 Stupid Daily Habits</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://medium.com/contemplate/pain-scale-problems-a303e2922bbb">
+                    <img src="photo4.png" alt="Article 4" width="150px" height="150px" style="padding-bottom: 80px;
+                    padding-top: 50px;">
+                    <div class="card-content">
+                        <h2>Pain Scale Problems</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://medium.datadriveninvestor.com/7-warning-signs-a-decade-before-dementia-diagnosis-e52a8684425d">
+                    <img src="photo5.png" alt="Article 5" width="150px" height="100px">
+                    <div class="card-content">
+                        <h2>7 Warning Signs a Decade Before Dementia Diagnosis</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://medium.com/wise-well/weak-toes-surprisingly-predict-serious-falls-later-in-life-8bd172f179b4">
+                    <img src="photo6.png" alt="Article 6"width="150px" height="100px" style="padding-bottom: 40px;">
+                    <div class="card-content">
+                        <h2>Weak Toes Surprisingly Predict Serious Falls Later in Life</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <small class="credits" style="padding-top: 15px;">All articles are rights reserved and credited to their respective owners.</small>
+    </div>
+    </div>
+</section>
+
+
+<!-- FAQs Section -->
+<section class="faqs" id="faqs">
+    <div class="container">
+        <h1 style="color: #004d40; font-weight: 700;">FREQUENTLY ASKED QUESTIONS(FAQs)</h1>
+        <br>
+        <div class="faq-item">
+            <h3>What should I do in case of a medical emergency?</h3>
+            <p>Call 911 or go to the nearest emergency room. Provide clear details about the situation to get the fastest help.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How can I check symptoms online?</h3>
+            <p>Use our Symptom Checker tool to enter your symptoms and get preliminary advice on possible conditions.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What is the best way to contact a healthcare provider?</h3>
+            <p>Contact your healthcare provider directly via their phone number or through their online patient portal for non-emergency inquiries.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How do I find the nearest hospital?</h3>
+            <p>You can use our Hospital Finder tool or search online maps for hospitals near you.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Where can I find health resources and articles?</h3>
+            <p>Visit our Health Resources section for articles and guides on various health topics.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Emergency Contacts Section -->
+<section class="emergency-contacts" id="emergency-contacts">
+    <div class="container">
+        <h1 style="color: #FFF; font-weight: 700;">EMERGENCY CONTACTS</h1>
+        <br>
+        <div class="contact-list">
+            <div class="contact-item">
+                <i class="fa fa-ambulance"></i>
+                <div class="contact-info">
+                    <h3>Ambulance Services</h3>
+                    <p>Call 911 for immediate ambulance services.</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fa fa-hospital"></i>
+                <div class="contact-info">
+                    <h3>Local Hospitals</h3>
+                    <p>Find the nearest hospital for emergency care.</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fa fa-phone"></i>
+                <div class="contact-info">
+                    <h3>Health Helpline</h3>
+                    <p>Call 104: The Arogya Sahayavani Health Information Helpline (HIHL).</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fa fa-medkit"></i>
+                <div class="contact-info">
+                    <h3>Poison Control</h3>
+                    <p>Call 1800-425-1213 poison control for immediate assistance with poisoning cases.</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fa fa-user-md"></i>
+                <div class="contact-info">
+                    <h3>Emergency Doctor</h3>
+                    <p>Find contact information for emergency doctors available 24/7.</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fa fa-heartbeat"></i>
+                <div class="contact-info">
+                    <h3>Cardiac Emergency</h3>
+                    <p>Call 112: Get assistance for cardiac emergencies and heart-related issues.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Footer Section -->
+<footer style="text-align: center;">
+    <div class="container">
+        <p>&copy; 2024 Wellness Center. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
